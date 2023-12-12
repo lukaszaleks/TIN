@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.zadanie1, .zadanie2, .zadanie3, .zadanie5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 440px;
+}
+
+h2{
+    width: 100%;
+}
+
+.interactive {
+    min-width: 200px;
+    text-align: center;
+    background-color: grey;
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 30px;
+}
+
+.kalkulator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+div#dane {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    background-color: #c7c7c7;
+    padding: 40px 10px;
+}
+
+div#wynik{
+    width: 99%;
+    height: 70px;
+    background-color: #3ca7a2;
+    text-align: right;
+    font-size: 50px;
+    color: white;
+    padding-right: 10px;
+}
+
+input#number1, input#number2, #dane button, select#operacja {
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+}
+
+#dane button{
+    background-color: #595959;
+    color: white;
+    border: none;
+}
+
+input#number1::before{
+    content: 'liczba nr 1';
+    position: absolute;
+    width: 100px;
+}
+
+select#operacja{
+    text-align: center;
+}
+
+.zadanie3{
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Grubość i kolor obramowania */
+    margin-top: 20px;
+}
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+.acordeon {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.acordeon .element {
+    padding: 10px;
+    background-color: #d7d7d7;
+    cursor: pointer;
+}
+
+.acordeon .element .content {
+    background-color: white;
+    overflow: hidden;
+    height: 0px;
+    min-height: 0px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element.active .content{
+    min-height: 100px;
+}
